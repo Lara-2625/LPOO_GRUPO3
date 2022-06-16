@@ -4,3 +4,9 @@ C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\ClasesBase\obj\D
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.pdb
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll.config
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.dll
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.pdb
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll.config
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.pdb

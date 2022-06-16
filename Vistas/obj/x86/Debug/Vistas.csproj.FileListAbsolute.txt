@@ -18,3 +18,27 @@ C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\Vistas\obj\x86\D
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVenta.resources
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVentas.resources
 C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVentasDetalles.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.exe
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.pdb
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\Vistas.exe
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\Vistas.pdb
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\ClasesBase.dll
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\ClasesBase.pdb
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.csprojResolveAssemblyReference.cache
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormCliente.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormObraSocial.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormProducto.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormLogin.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormMain.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormUsuario.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVenta.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVentas.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVentasDetalles.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.FormVerUsuarios.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\Vistas.exe.manifest
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\bin\Debug\Vistas.application
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.exe.manifest
+C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\Vistas\obj\x86\Debug\Vistas.application
