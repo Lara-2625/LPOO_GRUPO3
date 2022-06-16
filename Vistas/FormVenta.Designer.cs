@@ -41,13 +41,16 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBoxProductos = new System.Windows.Forms.ComboBox();
-            this.btnMasProducto = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnMasProducto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.lVProductos = new System.Windows.Forms.ListView();
             this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Precio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Cantidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Total = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBoxTotalPagar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,7 +141,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(191, 290);
+            this.btnSave.Location = new System.Drawing.Point(200, 290);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(81, 35);
             this.btnSave.TabIndex = 10;
@@ -149,7 +152,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.comboBoxProductos);
-            this.groupBox1.Controls.Add(this.btnMasProducto);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.comboBoxClientes);
             this.groupBox1.Controls.Add(this.dtpVenta);
@@ -178,16 +180,6 @@
             this.comboBoxProductos.TabIndex = 15;
             this.comboBoxProductos.SelectionChangeCommitted += new System.EventHandler(this.comboBoxProductos_SelectionChangeCommitted);
             // 
-            // btnMasProducto
-            // 
-            this.btnMasProducto.Location = new System.Drawing.Point(52, 290);
-            this.btnMasProducto.Name = "btnMasProducto";
-            this.btnMasProducto.Size = new System.Drawing.Size(93, 35);
-            this.btnMasProducto.TabIndex = 14;
-            this.btnMasProducto.Text = "Agregar mas productos";
-            this.btnMasProducto.UseVisualStyleBackColor = true;
-            this.btnMasProducto.Click += new System.EventHandler(this.btnMasProducto_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -196,6 +188,16 @@
             this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Producto";
+            // 
+            // btnMasProducto
+            // 
+            this.btnMasProducto.Location = new System.Drawing.Point(463, 310);
+            this.btnMasProducto.Name = "btnMasProducto";
+            this.btnMasProducto.Size = new System.Drawing.Size(93, 35);
+            this.btnMasProducto.TabIndex = 14;
+            this.btnMasProducto.Text = "Agregar a la lista";
+            this.btnMasProducto.UseVisualStyleBackColor = true;
+            this.btnMasProducto.Click += new System.EventHandler(this.btnMasProducto_Click);
             // 
             // label7
             // 
@@ -211,10 +213,11 @@
             this.lVProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Producto,
             this.Precio,
-            this.Cantidad});
+            this.Cantidad,
+            this.Total});
             this.lVProductos.Location = new System.Drawing.Point(406, 121);
             this.lVProductos.Name = "lVProductos";
-            this.lVProductos.Size = new System.Drawing.Size(184, 152);
+            this.lVProductos.Size = new System.Drawing.Size(215, 142);
             this.lVProductos.TabIndex = 15;
             this.lVProductos.UseCompatibleStateImageBehavior = false;
             this.lVProductos.View = System.Windows.Forms.View.Details;
@@ -226,17 +229,43 @@
             // Precio
             // 
             this.Precio.Text = "Precio";
+            this.Precio.Width = 44;
             // 
             // Cantidad
             // 
             this.Cantidad.Text = "Cantidad";
+            this.Cantidad.Width = 54;
+            // 
+            // Total
+            // 
+            this.Total.Text = "Total";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(412, 278);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Total a Pagar:";
+            // 
+            // txtBoxTotalPagar
+            // 
+            this.txtBoxTotalPagar.Enabled = false;
+            this.txtBoxTotalPagar.Location = new System.Drawing.Point(492, 275);
+            this.txtBoxTotalPagar.Name = "txtBoxTotalPagar";
+            this.txtBoxTotalPagar.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxTotalPagar.TabIndex = 17;
             // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 363);
+            this.Controls.Add(this.txtBoxTotalPagar);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.lVProductos);
+            this.Controls.Add(this.btnMasProducto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormVenta";
@@ -271,5 +300,8 @@
         private System.Windows.Forms.ColumnHeader Producto;
         private System.Windows.Forms.ColumnHeader Precio;
         private System.Windows.Forms.ColumnHeader Cantidad;
+        private System.Windows.Forms.ColumnHeader Total;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtBoxTotalPagar;
     }
 }

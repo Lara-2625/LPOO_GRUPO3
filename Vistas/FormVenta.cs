@@ -14,6 +14,7 @@ namespace Vistas
     {
         DataTable dt;
         Boolean band = false;
+        Decimal total = 0;
         public FormVenta()
         {
             InitializeComponent();
@@ -52,20 +53,22 @@ namespace Vistas
             if (band == false)
             {
                 TrabajarVentas.insert_venta_detalle(venta(), vDetalle());
+                MessageBox.Show("Venta Registrada Exitosamente");
+                limpiar();
             }
             else
             {
-                TrabajarVentas.insert_vDetalle(vDetalle());
+                MessageBox.Show("Venta Registrada Exitosamente");
+                limpiar();
             }
 
 
 
 
-            limpiar();
+        
             comboBoxClientes.Enabled = true;
             dtpVenta.Enabled = true;
             band = false;
-            MessageBox.Show("Registro Exitoso");
         }
 
         private void txtBoxCantidad_TextChanged(object sender, EventArgs e)
@@ -114,7 +117,8 @@ namespace Vistas
             vDetalle.Det_Cantidad = Convert.ToDecimal(txtBoxCantidad.Text);
             vDetalle.Det_Precio = Convert.ToDecimal(txtBoxPrecio.Text);
             vDetalle.Det_Total = vDetalle.Det_Cantidad * vDetalle.Det_Precio;
-
+            total = total + vDetalle.Det_Total;
+            txtBoxTotalPagar.Text = total.ToString();
             return vDetalle;
         }
 
@@ -124,6 +128,7 @@ namespace Vistas
             ListViewItem lista = new ListViewItem(comboBoxProductos.Text);
             lista.SubItems.Add(txtBoxPrecio.Text);
             lista.SubItems.Add(txtBoxCantidad.Text);
+            lista.SubItems.Add((Convert.ToDecimal(txtBoxPrecio.Text) * Convert.ToDecimal(txtBoxCantidad.Text)).ToString());
             lVProductos.Items.Add(lista);
 
             comboBoxClientes.Enabled = false;
@@ -149,7 +154,9 @@ namespace Vistas
             txtBoxPrecio.Clear();
             txtBoxTotal.Clear();
             lVProductos.Clear();
+            txtBoxTotalPagar.Clear();
         }
+
 
         
 
