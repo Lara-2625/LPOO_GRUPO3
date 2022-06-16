@@ -1,0 +1,4 @@
+C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\LPOO_GRUPO3\bin\Debug\ClasesBase.dll
+C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\LPOO_GRUPO3\bin\Debug\ClasesBase.pdb
+C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\LPOO_GRUPO3\obj\Debug\ClasesBase.dll
+C:\Users\maxi\documents\visual studio 2010\Projects\LPOO_GRUPO3\LPOO_GRUPO3\obj\Debug\ClasesBase.pdb
