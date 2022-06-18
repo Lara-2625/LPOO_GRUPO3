@@ -110,6 +110,19 @@ namespace Vistas
             frmVentaDetalle.Show();
         }
 
+        private void listadoBusquedaDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClienteBusqueda frmClienteBusqueda = new FormClienteBusqueda();
+            frmClienteBusqueda.Show();
+        }
+
+        private void clientesAfiliadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormClientesObra frmCliObra = new FormClientesObra();
+            frmCliObra.Show();
+        }
+
+      
       
        
 

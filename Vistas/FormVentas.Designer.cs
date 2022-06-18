@@ -38,6 +38,18 @@
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
             this.dtpInicio = new System.Windows.Forms.DateTimePicker();
             this.btnListarD = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBoxCantClientes = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBoxNomCliente = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBoxFechaI = new System.Windows.Forms.TextBox();
+            this.txtBoxFechaF = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBoxTotalFecha = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -48,7 +60,7 @@
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVentas.Location = new System.Drawing.Point(12, 103);
             this.dgvVentas.Name = "dgvVentas";
-            this.dgvVentas.Size = new System.Drawing.Size(676, 244);
+            this.dgvVentas.Size = new System.Drawing.Size(676, 182);
             this.dgvVentas.TabIndex = 1;
             // 
             // groupBox1
@@ -139,14 +151,127 @@
             this.btnListarD.UseVisualStyleBackColor = true;
             this.btnListarD.Click += new System.EventHandler(this.btnListarD_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 303);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Ventas Realizadas por Cliente;";
+            // 
+            // txtBoxCantClientes
+            // 
+            this.txtBoxCantClientes.Enabled = false;
+            this.txtBoxCantClientes.Location = new System.Drawing.Point(186, 341);
+            this.txtBoxCantClientes.Name = "txtBoxCantClientes";
+            this.txtBoxCantClientes.Size = new System.Drawing.Size(130, 20);
+            this.txtBoxCantClientes.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(146, 344);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Total:";
+            // 
+            // txtBoxNomCliente
+            // 
+            this.txtBoxNomCliente.Enabled = false;
+            this.txtBoxNomCliente.Location = new System.Drawing.Point(186, 296);
+            this.txtBoxNomCliente.Name = "txtBoxNomCliente";
+            this.txtBoxNomCliente.Size = new System.Drawing.Size(130, 20);
+            this.txtBoxNomCliente.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(440, 296);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Ventas Realizadas entre Fechas";
+            // 
+            // txtBoxFechaI
+            // 
+            this.txtBoxFechaI.Enabled = false;
+            this.txtBoxFechaI.Location = new System.Drawing.Point(352, 319);
+            this.txtBoxFechaI.Name = "txtBoxFechaI";
+            this.txtBoxFechaI.Size = new System.Drawing.Size(155, 20);
+            this.txtBoxFechaI.TabIndex = 9;
+            // 
+            // txtBoxFechaF
+            // 
+            this.txtBoxFechaF.Enabled = false;
+            this.txtBoxFechaF.Location = new System.Drawing.Point(533, 319);
+            this.txtBoxFechaF.Name = "txtBoxFechaF";
+            this.txtBoxFechaF.Size = new System.Drawing.Size(155, 20);
+            this.txtBoxFechaF.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(515, 322);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(12, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "y";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(440, 353);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Total:";
+            // 
+            // txtBoxTotalFecha
+            // 
+            this.txtBoxTotalFecha.Enabled = false;
+            this.txtBoxTotalFecha.Location = new System.Drawing.Point(480, 350);
+            this.txtBoxTotalFecha.Name = "txtBoxTotalFecha";
+            this.txtBoxTotalFecha.Size = new System.Drawing.Size(130, 20);
+            this.txtBoxTotalFecha.TabIndex = 13;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(12, 286);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(317, 84);
+            this.groupBox3.TabIndex = 25;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(335, 286);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(368, 84);
+            this.groupBox4.TabIndex = 26;
+            this.groupBox4.TabStop = false;
+            // 
             // FormVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 359);
+            this.ClientSize = new System.Drawing.Size(714, 379);
+            this.Controls.Add(this.txtBoxTotalFecha);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtBoxFechaF);
+            this.Controls.Add(this.txtBoxFechaI);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtBoxNomCliente);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtBoxCantClientes);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvVentas);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Name = "FormVentas";
             this.Text = "FormVentas";
             this.Load += new System.EventHandler(this.FormVentas_Load);
@@ -155,6 +280,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -170,5 +296,17 @@
         private System.Windows.Forms.DateTimePicker dtpFin;
         private System.Windows.Forms.DateTimePicker dtpInicio;
         private System.Windows.Forms.Button btnListarD;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtBoxCantClientes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBoxNomCliente;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtBoxFechaI;
+        private System.Windows.Forms.TextBox txtBoxFechaF;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBoxTotalFecha;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

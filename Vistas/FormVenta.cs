@@ -15,6 +15,8 @@ namespace Vistas
         DataTable dt;
         Boolean band = false;
         Decimal total = 0;
+
+        public string valuemember="";
         public FormVenta()
         {
             InitializeComponent();
@@ -25,7 +27,10 @@ namespace Vistas
             load_clientes();
             load_productos();
             MessageBox.Show("Para agregar mas productos solo presione el boton agregar mas productos una vez seleccionado el producto y la cantidad. Al finalizar solo presione guardar venta :)");
-
+            if (valuemember != "")
+            {
+                comboBoxClientes.SelectedValue=valuemember;
+            }
            
         }
         private void load_productos()
@@ -68,6 +73,7 @@ namespace Vistas
         
             comboBoxClientes.Enabled = true;
             dtpVenta.Enabled = true;
+            btnBuscar.Enabled = true;
             band = false;
         }
 
@@ -133,6 +139,7 @@ namespace Vistas
 
             comboBoxClientes.Enabled = false;
             dtpVenta.Enabled = false;
+            btnBuscar.Enabled = false;
 
 
             if (band == false)
@@ -155,6 +162,13 @@ namespace Vistas
             txtBoxTotal.Clear();
             lVProductos.Clear();
             txtBoxTotalPagar.Clear();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FormClienteBusqueda frmClienteBusqueda = new FormClienteBusqueda();
+            frmClienteBusqueda.Show();
+            this.Close();
         }
 
 

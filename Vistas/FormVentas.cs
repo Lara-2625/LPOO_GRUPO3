@@ -32,12 +32,23 @@ namespace Vistas
         private void btnListar_Click(object sender, EventArgs e)
         {
             dgvVentas.DataSource=TrabajarVentas.listar_Ventas_Cliente(comboBoxCliente.SelectedValue.ToString());
+            txtBoxNomCliente.Text = comboBoxCliente.Text;
+            txtBoxCantClientes.Text= (TrabajarVentas.contar_clientes_ventas(comboBoxCliente.SelectedValue.ToString())).ToString();
+            txtBoxFechaF.Clear();
+            txtBoxFechaI.Clear();
+            txtBoxTotalFecha.Clear();
         }
 
         private void btnListarD_Click(object sender, EventArgs e)
         {
             dgvVentas.DataSource = TrabajarVentas.listar_Ventas_Fecha(Convert.ToDateTime(dtpInicio.Text), Convert.ToDateTime(dtpFin.Text));
+            txtBoxFechaI.Text = dtpInicio.Text;
+            txtBoxFechaF.Text= dtpFin.Text;
+            txtBoxTotalFecha.Text = (TrabajarVentas.contar_ventas_fecha(Convert.ToDateTime(dtpInicio.Text), Convert.ToDateTime(dtpFin.Text))).ToString();
+            txtBoxNomCliente.Clear();
+            txtBoxCantClientes.Clear();
         }
+
 
    
 

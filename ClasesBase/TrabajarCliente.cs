@@ -149,5 +149,45 @@ namespace ClasesBase
 
             return dt;
         }
+        public static DataTable listar_clientes_obra(string os_cuit)
+        {
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "listar_clientes_obra";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Connection = cnn;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            cmd.Parameters.AddWithValue("@os_cuit", os_cuit);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            return dt;
+        }
+       
+        public static int contar_clientes_obra(string os_cuit)
+        {
+            int cant_clientes_obra = 0;
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "contar_clientes_obra";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@os_cuit",os_cuit );
+          
+            cmd.Parameters.AddWithValue("@count", SqlDbType.Int);
+            cmd.Parameters["@count"].Direction = ParameterDirection.Output;
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (cmd.Parameters["@count"].Value.GetType() == Type.GetType("System.Int32"))
+            {
+                cant_clientes_obra = (int)cmd.Parameters["@count"].Value;
+            }
+            return cant_clientes_obra;
+        }
     }
 }

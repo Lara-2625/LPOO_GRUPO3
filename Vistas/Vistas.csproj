@@ -81,6 +81,18 @@
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormClienteBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClienteBusqueda.Designer.cs">
+      <DependentUpon>FormClienteBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientesObra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientesObra.Designer.cs">
+      <DependentUpon>FormClientesObra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormObraSocial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClienteBusqueda.resx">
+      <DependentUpon>FormClienteBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientesObra.resx">
+      <DependentUpon>FormClientesObra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormObraSocial.resx">
       <DependentUpon>FormObraSocial.cs</DependentUpon>

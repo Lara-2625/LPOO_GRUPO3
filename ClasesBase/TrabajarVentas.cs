@@ -228,6 +228,101 @@ namespace ClasesBase
             da.Fill(dt);
             return dt;
         }
+        public static int contar_clientes_ventas(string dni)
+        {
+            int cant_cliente=0;
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "contar_clientes_ventas";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@dni", dni);
+            cmd.Parameters.AddWithValue("@count", SqlDbType.Int);
+            cmd.Parameters["@count"].Direction = ParameterDirection.Output;
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (cmd.Parameters["@count"].Value.GetType() == Type.GetType("System.Int32"))
+            {
+                cant_cliente = (int)cmd.Parameters["@count"].Value;
+            }
+            return cant_cliente;
+        }
+        public static int contar_ventas_fecha(DateTime dInicio,DateTime dFin)
+        {
+            int cant_ventas_fecha=0;
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "contar_ventas_fecha";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@dInicio", dInicio);
+            cmd.Parameters.AddWithValue("@dFin", dFin);
+            cmd.Parameters.AddWithValue("@count", SqlDbType.Int);
+            cmd.Parameters["@count"].Direction = ParameterDirection.Output;
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+            if (cmd.Parameters["@count"].Value.GetType() == Type.GetType("System.Int32"))
+            {
+                cant_ventas_fecha = (int)cmd.Parameters["@count"].Value;
+            }
+            return cant_ventas_fecha;
+        }
+        public static int contar_productos_cliente(string dni)
+        {
+            int total_cliente=0;
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "contar_productos_cliente";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@dni", dni);
+
+            cnn.Open();
+            if (cmd.ExecuteScalar().GetType() == Type.GetType("System.Decimal"))
+            {
+                total_cliente = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            cnn.Dispose();
+            cmd.Dispose();
+            cnn.Close();
+            
+            
+
+            return total_cliente;
+        }
+        public static decimal contar_productos_fecha(DateTime dInicio, DateTime dFin)
+        {
+            decimal cant_productos_fecha = 0;
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "contar_productos_fecha";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@dInicio", dInicio);
+            cmd.Parameters.AddWithValue("@dFin", dFin);
+
+
+
+            cnn.Open();
+            if (cmd.ExecuteScalar().GetType() == Type.GetType("System.Decimal"))
+            {
+                cant_productos_fecha = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+  
+            cnn.Dispose();
+            cmd.Dispose();
+            cnn.Close();
+
+            return cant_productos_fecha;
+        }
         
     }
 }
