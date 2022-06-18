@@ -50,6 +50,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Gainsboro;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
             this.tsmVentas,
@@ -58,12 +60,13 @@
             this.tsmUsuarios});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(396, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(386, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // sistemaToolStripMenuItem
             // 
+            this.sistemaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.WindowText;
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.sistemaToolStripMenuItem.Text = "Sistema";
@@ -74,28 +77,30 @@
             this.altaVentaToolStripMenuItem,
             this.listadoVentasToolStripMenuItem,
             this.lIstadoDetalleDeVentasToolStripMenuItem});
+            this.tsmVentas.ForeColor = System.Drawing.SystemColors.WindowText;
             this.tsmVentas.Name = "tsmVentas";
-            this.tsmVentas.Size = new System.Drawing.Size(53, 20);
+            this.tsmVentas.Size = new System.Drawing.Size(54, 20);
             this.tsmVentas.Text = "Ventas";
             // 
             // altaVentaToolStripMenuItem
             // 
+            this.altaVentaToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.altaVentaToolStripMenuItem.Name = "altaVentaToolStripMenuItem";
-            this.altaVentaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.altaVentaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.altaVentaToolStripMenuItem.Text = "Alta Venta";
             this.altaVentaToolStripMenuItem.Click += new System.EventHandler(this.altaVentaToolStripMenuItem_Click);
             // 
             // listadoVentasToolStripMenuItem
             // 
             this.listadoVentasToolStripMenuItem.Name = "listadoVentasToolStripMenuItem";
-            this.listadoVentasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.listadoVentasToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.listadoVentasToolStripMenuItem.Text = "Listado Ventas";
             this.listadoVentasToolStripMenuItem.Click += new System.EventHandler(this.listadoVentasToolStripMenuItem_Click);
             // 
             // lIstadoDetalleDeVentasToolStripMenuItem
             // 
             this.lIstadoDetalleDeVentasToolStripMenuItem.Name = "lIstadoDetalleDeVentasToolStripMenuItem";
-            this.lIstadoDetalleDeVentasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.lIstadoDetalleDeVentasToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.lIstadoDetalleDeVentasToolStripMenuItem.Text = "LIstado DetalleVentas";
             this.lIstadoDetalleDeVentasToolStripMenuItem.Click += new System.EventHandler(this.lIstadoDetalleDeVentasToolStripMenuItem_Click);
             // 
@@ -111,14 +116,14 @@
             // altaProuctoToolStripMenuItem
             // 
             this.altaProuctoToolStripMenuItem.Name = "altaProuctoToolStripMenuItem";
-            this.altaProuctoToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.altaProuctoToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.altaProuctoToolStripMenuItem.Text = "ABM Producto";
             this.altaProuctoToolStripMenuItem.Click += new System.EventHandler(this.altaProuctoToolStripMenuItem_Click);
             // 
             // listadoProductosVendidosToolStripMenuItem
             // 
             this.listadoProductosVendidosToolStripMenuItem.Name = "listadoProductosVendidosToolStripMenuItem";
-            this.listadoProductosVendidosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.listadoProductosVendidosToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.listadoProductosVendidosToolStripMenuItem.Text = "Listado Productos Vendidos";
             this.listadoProductosVendidosToolStripMenuItem.Click += new System.EventHandler(this.listadoProductosVendidosToolStripMenuItem_Click);
             // 
@@ -148,43 +153,57 @@
             // aBMToolStripMenuItem
             // 
             this.aBMToolStripMenuItem.Name = "aBMToolStripMenuItem";
-            this.aBMToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.aBMToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aBMToolStripMenuItem.Text = "ABM Usuario";
             this.aBMToolStripMenuItem.Click += new System.EventHandler(this.aBMToolStripMenuItem_Click);
             // 
             // BtnAltaCliente
             // 
-            this.BtnAltaCliente.Location = new System.Drawing.Point(127, 84);
+            this.BtnAltaCliente.BackColor = System.Drawing.Color.OrangeRed;
+            this.BtnAltaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAltaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAltaCliente.ForeColor = System.Drawing.SystemColors.Window;
+            this.BtnAltaCliente.Location = new System.Drawing.Point(122, 110);
             this.BtnAltaCliente.Name = "BtnAltaCliente";
-            this.BtnAltaCliente.Size = new System.Drawing.Size(111, 23);
+            this.BtnAltaCliente.Size = new System.Drawing.Size(149, 45);
             this.BtnAltaCliente.TabIndex = 1;
             this.BtnAltaCliente.Text = "Alta Cliente";
-            this.BtnAltaCliente.UseVisualStyleBackColor = true;
+            this.BtnAltaCliente.UseVisualStyleBackColor = false;
             this.BtnAltaCliente.Click += new System.EventHandler(this.BtnAltaCliente_Click);
             // 
             // BtnAltaProducto
             // 
-            this.BtnAltaProducto.Location = new System.Drawing.Point(127, 123);
+            this.BtnAltaProducto.BackColor = System.Drawing.Color.OrangeRed;
+            this.BtnAltaProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAltaProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAltaProducto.ForeColor = System.Drawing.SystemColors.Window;
+            this.BtnAltaProducto.Location = new System.Drawing.Point(122, 161);
             this.BtnAltaProducto.Name = "BtnAltaProducto";
-            this.BtnAltaProducto.Size = new System.Drawing.Size(111, 23);
+            this.BtnAltaProducto.Size = new System.Drawing.Size(149, 45);
             this.BtnAltaProducto.TabIndex = 2;
             this.BtnAltaProducto.Text = "Alta Producto";
-            this.BtnAltaProducto.UseVisualStyleBackColor = true;
+            this.BtnAltaProducto.UseVisualStyleBackColor = false;
             this.BtnAltaProducto.Click += new System.EventHandler(this.BtnAltaProducto_Click);
             // 
             // BtnAltaObraSocial
             // 
-            this.BtnAltaObraSocial.Location = new System.Drawing.Point(127, 41);
+            this.BtnAltaObraSocial.BackColor = System.Drawing.Color.OrangeRed;
+            this.BtnAltaObraSocial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAltaObraSocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAltaObraSocial.ForeColor = System.Drawing.SystemColors.Window;
+            this.BtnAltaObraSocial.Location = new System.Drawing.Point(122, 55);
             this.BtnAltaObraSocial.Name = "BtnAltaObraSocial";
-            this.BtnAltaObraSocial.Size = new System.Drawing.Size(111, 23);
+            this.BtnAltaObraSocial.Size = new System.Drawing.Size(149, 45);
             this.BtnAltaObraSocial.TabIndex = 3;
             this.BtnAltaObraSocial.Text = "Alta ObraSocial";
-            this.BtnAltaObraSocial.UseVisualStyleBackColor = true;
+            this.BtnAltaObraSocial.UseVisualStyleBackColor = false;
             this.BtnAltaObraSocial.Click += new System.EventHandler(this.BtnAltaObraSocial_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(149, 226);
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnSalir.Location = new System.Drawing.Point(157, 242);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 4;
@@ -196,12 +215,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 261);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(386, 290);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.BtnAltaObraSocial);
             this.Controls.Add(this.BtnAltaProducto);
             this.Controls.Add(this.BtnAltaCliente);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "FormMain";

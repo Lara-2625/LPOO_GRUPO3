@@ -34,5 +34,7 @@ namespace Vistas
                 MessageBox.Show("Registro Cancelado");
             }
         }
+
+       
     }
 }

@@ -53,13 +53,13 @@ namespace Vistas
         }
         private void OnMouseEnterbtnEnviar(object sender, EventArgs e)
         {
-            btnEnviar.BackColor = Color.Tomato;
-            btnEnviar.Font = new Font(btnEnviar.Font.FontFamily, 8);
+            btnEnviar.BackColor = Color.NavajoWhite;
+            btnEnviar.Font = new Font(btnEnviar.Font.FontFamily, 12);
            
         }
         private void OnMouseLeavebtnEnviear(object sender, EventArgs e) 
         {
-            btnEnviar.BackColor = Button.DefaultBackColor;
+            btnEnviar.BackColor = Color.OrangeRed;
             btnEnviar.Font = Button.DefaultFont;
         }
 
@@ -69,5 +69,9 @@ namespace Vistas
             formVerUsuarios.Show();
         }
 
+        
+       
+
+        
     }
 }

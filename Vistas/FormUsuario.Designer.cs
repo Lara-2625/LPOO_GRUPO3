@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnClean = new System.Windows.Forms.Button();
@@ -77,6 +79,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtBoxApellido);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox1.Location = new System.Drawing.Point(563, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(351, 314);
@@ -86,12 +89,16 @@
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(90, 271);
+            this.btnClean.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClean.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btnClean.ForeColor = System.Drawing.Color.White;
+            this.btnClean.Location = new System.Drawing.Point(93, 271);
             this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(75, 23);
+            this.btnClean.Size = new System.Drawing.Size(72, 23);
             this.btnClean.TabIndex = 16;
             this.btnClean.Text = "Limpiar";
-            this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.UseVisualStyleBackColor = false;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // labelID
@@ -115,6 +122,8 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.Color.DarkRed;
             this.btnDelete.Location = new System.Drawing.Point(270, 271);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
@@ -125,6 +134,8 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.Color.DarkRed;
             this.btnUpdate.Location = new System.Drawing.Point(178, 271);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
@@ -135,12 +146,16 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(9, 271);
+            this.btnSave.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(12, 271);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(72, 23);
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Guardar";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // comboBoxRoles
@@ -202,7 +217,25 @@
             // 
             // dgvUsuarios
             // 
+            this.dgvUsuarios.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUsuarios.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgvUsuarios.Location = new System.Drawing.Point(12, 89);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
@@ -213,6 +246,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(47, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 13);
@@ -228,24 +262,30 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(323, 47);
+            this.btnSearch.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSearch.Location = new System.Drawing.Point(323, 35);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(116, 35);
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "Buscar";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(944, 397);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtBoxSearch);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormUsuario";
             this.Text = "FormUsuario";
             this.Load += new System.EventHandler(this.FormUsuario_Load);

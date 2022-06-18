@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnListar = new System.Windows.Forms.Button();
@@ -45,7 +47,25 @@
             // 
             // dgvVentas
             // 
+            this.dgvVentas.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVentas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvVentas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgvVentas.Location = new System.Drawing.Point(12, 103);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.Size = new System.Drawing.Size(676, 244);
@@ -55,6 +75,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnListar);
             this.groupBox1.Controls.Add(this.comboBoxCliente);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox1.Location = new System.Drawing.Point(531, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(157, 85);
@@ -64,12 +85,16 @@
             // 
             // btnListar
             // 
+            this.btnListar.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnListar.ForeColor = System.Drawing.SystemColors.Window;
             this.btnListar.Location = new System.Drawing.Point(27, 45);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.Size = new System.Drawing.Size(109, 34);
             this.btnListar.TabIndex = 1;
             this.btnListar.Text = "Listar";
-            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // comboBoxCliente
@@ -87,6 +112,7 @@
             this.groupBox2.Controls.Add(this.dtpFin);
             this.groupBox2.Controls.Add(this.dtpInicio);
             this.groupBox2.Controls.Add(this.btnListarD);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(495, 85);
@@ -131,22 +157,28 @@
             // 
             // btnListarD
             // 
+            this.btnListarD.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnListarD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnListarD.ForeColor = System.Drawing.SystemColors.Window;
             this.btnListarD.Location = new System.Drawing.Point(372, 26);
             this.btnListarD.Name = "btnListarD";
-            this.btnListarD.Size = new System.Drawing.Size(75, 23);
+            this.btnListarD.Size = new System.Drawing.Size(104, 37);
             this.btnListarD.TabIndex = 1;
             this.btnListarD.Text = "Listar";
-            this.btnListarD.UseVisualStyleBackColor = true;
+            this.btnListarD.UseVisualStyleBackColor = false;
             this.btnListarD.Click += new System.EventHandler(this.btnListarD_Click);
             // 
             // FormVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(714, 359);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvVentas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormVentas";
             this.Text = "FormVentas";
             this.Load += new System.EventHandler(this.FormVentas_Load);

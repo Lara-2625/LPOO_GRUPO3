@@ -141,12 +141,16 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(200, 290);
+            this.btnSave.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSave.Location = new System.Drawing.Point(146, 290);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(81, 35);
+            this.btnSave.Size = new System.Drawing.Size(200, 41);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Guardar Venta";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox1
@@ -164,6 +168,7 @@
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(358, 331);
@@ -191,9 +196,12 @@
             // 
             // btnMasProducto
             // 
-            this.btnMasProducto.Location = new System.Drawing.Point(463, 310);
+            this.btnMasProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMasProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnMasProducto.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnMasProducto.Location = new System.Drawing.Point(450, 310);
             this.btnMasProducto.Name = "btnMasProducto";
-            this.btnMasProducto.Size = new System.Drawing.Size(93, 35);
+            this.btnMasProducto.Size = new System.Drawing.Size(142, 41);
             this.btnMasProducto.TabIndex = 14;
             this.btnMasProducto.Text = "Agregar a la lista";
             this.btnMasProducto.UseVisualStyleBackColor = true;
@@ -202,6 +210,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(424, 97);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 13);
@@ -215,6 +224,7 @@
             this.Precio,
             this.Cantidad,
             this.Total});
+            this.lVProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lVProductos.Location = new System.Drawing.Point(406, 121);
             this.lVProductos.Name = "lVProductos";
             this.lVProductos.Size = new System.Drawing.Size(215, 142);
@@ -243,6 +253,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label8.Location = new System.Drawing.Point(412, 278);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
@@ -252,6 +263,7 @@
             // txtBoxTotalPagar
             // 
             this.txtBoxTotalPagar.Enabled = false;
+            this.txtBoxTotalPagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.txtBoxTotalPagar.Location = new System.Drawing.Point(492, 275);
             this.txtBoxTotalPagar.Name = "txtBoxTotalPagar";
             this.txtBoxTotalPagar.Size = new System.Drawing.Size(100, 20);
@@ -261,6 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(653, 363);
             this.Controls.Add(this.txtBoxTotalPagar);
             this.Controls.Add(this.label8);
@@ -268,6 +281,7 @@
             this.Controls.Add(this.btnMasProducto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormVenta";
             this.Text = "FormVenta";
             this.Load += new System.EventHandler(this.FormVenta_Load);
