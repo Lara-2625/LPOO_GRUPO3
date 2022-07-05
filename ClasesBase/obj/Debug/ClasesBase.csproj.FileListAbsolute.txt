@@ -10,3 +10,9 @@ C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.pdb
 C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll.config
 C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll
 C:\Users\maxi\Documents\LPOO\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.pdb
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll.config
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.dll
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Debug\ClasesBase.pdb
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.csprojResolveAssemblyReference.cache
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.dll
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\obj\Debug\ClasesBase.pdb

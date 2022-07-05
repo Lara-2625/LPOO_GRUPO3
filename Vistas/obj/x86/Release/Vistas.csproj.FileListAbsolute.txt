@@ -1,0 +1,16 @@
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\bin\Release\Vistas.exe.config
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.csprojResolveAssemblyReference.cache
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormCliente.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormClienteBusqueda.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormClientesObra.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormObraSocial.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormProducto.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormLogin.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormMain.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormUsuario.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormVenta.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormVentas.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormVentasDetalles.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.FormVerUsuarios.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.Properties.Resources.resources
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\Vistas\obj\x86\Release\Vistas.csproj.GenerateResource.Cache

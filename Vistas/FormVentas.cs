@@ -24,7 +24,7 @@ namespace Vistas
         private void load_ventas()
         {
             dgvVentas.DataSource = TrabajarVentas.listar_Ventas();
-            comboBoxCliente.DisplayMember = "Cli_Nombre";
+            comboBoxCliente.DisplayMember = "Cli_NombreCompleto";
             comboBoxCliente.ValueMember = "Cli_DNI";
             comboBoxCliente.DataSource = TrabajarVentas.list_Cliente();
         }
@@ -48,10 +48,28 @@ namespace Vistas
             txtBoxNomCliente.Clear();
             txtBoxCantClientes.Clear();
         }
-
-
-   
-
       
+        private void dgvVentas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvVentas.Rows.Count != 0)
+            {
+                if (dgvVentas.Rows.Count != 1)
+                {
+                    string valuemember = dgvVentas.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    string name = dgvVentas.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    DialogResult d = MessageBox.Show("Esta seguro que desea eliminar el registro de ventas N°"+valuemember+" del cliente "+name,"ADVERTENCIA!!!",MessageBoxButtons.YesNo,MessageBoxIcon.Error);
+                    if (d == DialogResult.Yes)
+                    {
+                        TrabajarVentas.borrar_venta(valuemember);                        
+                        dgvVentas.Rows.RemoveAt(e.RowIndex);
+                        MessageBox.Show("Venta Eliminada con exito");
+                    }
+                    
+                    
+                }
+            }
+            
+        }
+
     }
 }

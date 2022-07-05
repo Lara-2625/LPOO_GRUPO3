@@ -64,6 +64,7 @@
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.Size = new System.Drawing.Size(710, 217);
             this.dgvProductos.TabIndex = 0;
+            this.dgvProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -147,7 +148,7 @@
             this.btnFecha.Name = "btnFecha";
             this.btnFecha.Size = new System.Drawing.Size(75, 23);
             this.btnFecha.TabIndex = 2;
-            this.btnFecha.Text = "Ordenar";
+            this.btnFecha.Text = "Listar";
             this.btnFecha.UseVisualStyleBackColor = true;
             this.btnFecha.Click += new System.EventHandler(this.btnFecha_Click);
             // 
@@ -241,9 +242,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(34, 340);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 13);
+            this.label8.Size = new System.Drawing.Size(151, 13);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Productos Vendidos por Cliente;";
+            this.label8.Text = "Productos Vendidos al Cliente;";
             // 
             // groupBox3
             // 

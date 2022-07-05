@@ -45,11 +45,9 @@ namespace Vistas
 
         private void load_clientes()
         {
-            comboBoxClientes.DisplayMember = "Cli_Nombre";
+            comboBoxClientes.DisplayMember = "Cli_NombreCompleto";
             comboBoxClientes.ValueMember = "Cli_DNI";
             comboBoxClientes.DataSource = TrabajarVentas.list_Cliente();
-
-         
         }
         private void btnSave_Click(object sender, EventArgs e)
         {

@@ -18,10 +18,13 @@ namespace Vistas
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            dgvProductos.DataSource = TrabajarVentas.listar_Producto_Cliente(comboBoxClientes.SelectedValue.ToString());
-            
-            txtBoxNomCliente.Text = comboBoxClientes.Text;
-            txtBoxCantClientes.Text = TrabajarVentas.contar_productos_cliente(comboBoxClientes.SelectedValue.ToString()).ToString();
+            if (comboBoxClientes.SelectedValue != null)
+            {
+                dgvProductos.DataSource = TrabajarVentas.listar_Producto_Cliente(comboBoxClientes.SelectedValue.ToString());
+
+                txtBoxNomCliente.Text = comboBoxClientes.Text;
+                txtBoxCantClientes.Text = TrabajarVentas.contar_productos_cliente(comboBoxClientes.SelectedValue.ToString()).ToString();
+            }
             txtBoxFechaF.Clear();
             txtBoxFechaI.Clear();
             txtBoxTotalFecha.Clear();
@@ -29,7 +32,7 @@ namespace Vistas
 
         private void FormVentasDetalles_Load(object sender, EventArgs e)
         {
-            comboBoxClientes.DisplayMember = "Cli_Nombre";
+            comboBoxClientes.DisplayMember = "Cli_NombreCompleto";
             comboBoxClientes.ValueMember = "Cli_DNI";
             comboBoxClientes.DataSource = TrabajarVentas.list_Cliente();
 
@@ -45,5 +48,12 @@ namespace Vistas
             txtBoxNomCliente.Clear();
             txtBoxCantClientes.Clear();
         }
+
+        private void dgvProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 }

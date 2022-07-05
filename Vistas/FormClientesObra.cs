@@ -29,9 +29,13 @@ namespace Vistas
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dgvClientes.DataSource = TrabajarCliente.listar_clientes_obra(comboBoxObras.SelectedValue.ToString());
-            txtBoxObra.Text = comboBoxObras.Text;
-            txtBoxTotalClientes.Text = TrabajarCliente.contar_clientes_obra(comboBoxObras.SelectedValue.ToString()).ToString();
+            if (comboBoxObras.SelectedValue != null)
+            {
+                dgvClientes.DataSource = TrabajarCliente.listar_clientes_obra(comboBoxObras.SelectedValue.ToString());
+                txtBoxObra.Text = comboBoxObras.Text;
+                txtBoxTotalClientes.Text = TrabajarCliente.contar_clientes_obra(comboBoxObras.SelectedValue.ToString()).ToString();
+            }
+
         }
     }
 }

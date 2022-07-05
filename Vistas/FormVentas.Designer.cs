@@ -62,6 +62,7 @@
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.Size = new System.Drawing.Size(676, 182);
             this.dgvVentas.TabIndex = 1;
+            this.dgvVentas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -76,7 +77,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(27, 45);
+            this.btnListar.Location = new System.Drawing.Point(31, 49);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 1;

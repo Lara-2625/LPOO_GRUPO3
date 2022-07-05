@@ -24,6 +24,7 @@ namespace ClasesBase
             //LLena los datos de la consulta en un data Table
             DataTable dt = new DataTable();
             da.Fill(dt);
+            dt.Columns.Add("Cli_NombreCompleto", typeof(string), "Cli_Apellido +', ' +Cli_Nombre");
             return dt;
         }
         public static DataTable list_Productos()
@@ -323,6 +324,21 @@ namespace ClasesBase
 
             return cant_productos_fecha;
         }
-        
+
+        public static void borrar_venta(String codigo)
+        {
+            SqlConnection cnn = new SqlConnection(ClasesBase.Properties.Settings.Default.opticaConnectionString);
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "ventasBorrar";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
     }
 }

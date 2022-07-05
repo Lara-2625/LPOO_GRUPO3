@@ -1,0 +1,5 @@
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Release\ClasesBase.dll.config
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Release\ClasesBase.dll
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\bin\Release\ClasesBase.pdb
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\obj\Release\ClasesBase.dll
+D:\ProyectosLPOO\TrabajoFinal\LPOO_GRUPO3\ClasesBase\obj\Release\ClasesBase.pdb
